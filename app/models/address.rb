@@ -1,3 +1,3 @@
 class Address < ApplicationRecord
-
-end 
+  belongs_to :student
+end

@@ -5,7 +5,7 @@ describe "user can create new address" do
     context "user fills in new address form with info and submits" do
       scenario "user sees student's show page with new address" do
         student = Student.create(name: "Ellen")
-        
+
         visit new_student_address_path(student)
 
         fill_in "address[description]", with: "Summer address"
@@ -20,7 +20,7 @@ describe "user can create new address" do
         expect(page).to have_content("2096 Wexford Circle")
         expect(page).to have_content("Wheaton")
         expect(page).to have_content("IL")
-        expect(page).to have_content("60180")
+        expect(page).to have_content(60180)
       end
     end
   end
