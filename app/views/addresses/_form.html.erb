@@ -1,0 +1,19 @@
+<%= form_for [@student, @address] do |f| %>
+  <%= f.label "Description: (e.g. Summer address) " %>
+  <%= f.text_field :description %>
+
+  <%= f.label "Street: " %>
+  <%= f.text_field :street %>
+
+  <%= f.label "City: " %>
+  <%= f.text_field :city %>
+
+  <%= f.label "State: " %>
+  <%= f.text_field :state %>
+
+  <%= f.label "Zip: " %>
+  <%= f.text_field :zip %>
+
+  <%= f.submit %>
+
+<% end %>
