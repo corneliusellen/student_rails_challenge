@@ -7,7 +7,7 @@ describe "user can edit a student" do
         student = Student.create(name: "Mika")
         visit edit_student_path(student)
 
-        fills_in "student[name]", with: "Mica"
+        fill_in "student[name]", with: "Mica"
         click_button "Update"
 
         expect(current_path).to eq(student_path(student))
