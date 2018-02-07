@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "user can view one student" do
-  context "user links student show page" do
+  context "user links to student show page" do
     scenario "user sees student information" do
       student_1 = Student.create(name: "Penelope")
       student_2 = Student.create(name: "Fred")
