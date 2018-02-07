@@ -1,4 +1,9 @@
 <h1><%= @student.name %></h1>
+<h3>Student's Addresses: </h3>
+<% @student.addresses.each do |address| %>
+  <li>Type: <%= address.description %></li>
+  <li>Location: <%= address.street %>, <%= address.city %>, <%= address.state %>, <%= address.zip %></li>
+<% end  %>
 
 <%= link_to("Create New Student", new_student_path) %> <br>
 <%= link_to("Back to view all students", students_path) %>
