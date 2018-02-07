@@ -8,8 +8,8 @@ describe "user can deletea a student" do
         student_2 = Student.create(name: "Fred")
         student_3 = Student.create(name: "Lucy")
         visit students_path
-        within(".student_#{student_1.id}") do
-          click_button "Delete"
+        within(".student-#{student_1.id}") do
+          click_link "Delete"
         end
 
         expect(current_path).to eq(students_path)
