@@ -20,7 +20,7 @@ describe "user can create new address" do
         expect(page).to have_content("2096 Wexford Circle")
         expect(page).to have_content("Wheaton")
         expect(page).to have_content("IL")
-        expect(page).to have_content(60180)
+        expect(page).to have_content("60180")
       end
     end
   end
